@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('simple_templates', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string("temp_name");
+            $table->longText("temp_contain");
         });
     }
 

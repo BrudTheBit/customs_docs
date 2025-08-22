@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('offender_info', function (Blueprint $table) {
             $table->id();
 
-            //ФИО в разных склонениях
+            //ИО в разных склонениях
             $table->string('offender_name_nominative');
             $table->string('offender_name_genitive');
             $table->string('offender_name_dative');
